@@ -1,0 +1,356 @@
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, black, darkmagenta);
+    color: #FAFAFA;
+    font-family: 'Courier New', sans-serif;
+    margin: 0;
+    height: 100%;
+}
+
+#theme-toggle {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: transparent;
+    text-align: right;
+}
+
+#home {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: transparent;
+    text-align: right;
+    color: #FAFAFA;
+}
+
+
+
+#projects {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: transparent;
+    text-align: right;
+    color: #FAFAFA;
+}
+
+#aboutMe {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: transparent;
+    text-align: right;
+    color: #FAFAFA;
+}
+
+#flag {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: transparent;
+    text-align: right;
+}
+
+body.light-mode #flag {
+    background-color: transparent;
+}
+
+body.light-mode #home {
+    color: rgb(86, 86, 86);
+    background-color: transparent;
+}
+
+body.light-mode #projects {
+    color: rgb(86, 86, 86);
+    background-color: transparent;
+}
+
+body.light-mode #aboutMe {
+    color: rgb(86, 86, 86);
+}
+
+body.light-mode #theme-toggle {
+    background-color: transparent;
+}
+
+
+body.light-mode {
+    background: linear-gradient(to right,#FAFAFA,#E3E0FF);
+    color: black;
+}
+
+body.light-mode .name {
+    color: #6A0DAD;
+}
+
+body.light-mode #translate {
+    color: rgb(86, 86, 86);
+}
+
+body.light-mode #copyright {
+    color: rgb(86, 86, 86);
+}
+
+body.light-mode #sprache {
+    color: rgb(86, 86, 86);
+}
+
+body.light-mode .grey {
+    color: rgb(86, 86, 86);
+}
+
+body.light-mode .container {
+    color: rgb(86, 86, 86);
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 99%;
+}
+
+.lHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #FAFAFA;
+}
+
+.rHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+main {
+    flex: 1;
+}
+
+.name {
+    color: darkmagenta;
+    font-family: 'Courier New', sans-serif;
+
+}
+
+body.light-mode .name {
+    color:  rgb(82, 82, 82);
+}
+
+.container {
+    min-width: 400px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: left;
+    margin-bottom: 10px;
+    background-color: transparent;
+    color: #FAFAFA;
+    transition: background 0.5s ease, color 0.5s ease;
+}
+
+.languages {
+    font-size: 30px;
+}
+
+#sprache {
+    font-size: 18px;
+}
+
+#footerc {
+    text-align:center;
+    padding: 40px 20px;
+}
+
+#projects {
+    text-decoration: none;
+}
+
+#pic {
+    width: 300px;
+}
+
+.grey a {
+    color: #00FFFF;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.grey a:hover {
+    color: #379f9f;
+}
+
+.dropdown {
+    position:relative;
+    width: 160px;
+}
+
+.dropdown-btn {
+    width: 100%;
+    padding: 10px;
+    background: #0b0b12;
+    border: 1px solid #6c63ff;
+    border-radius: 8px;
+    color: #6c63ff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dropdown-btn:hover {
+    background: #6c63ff;
+    color: #0b0b12;
+    transform: scale(1.05);
+}
+
+body.light-mode .dropdown-btn {
+    background-color: #E3E0FF;  
+    border: 1px solid #6A0DAD; 
+    color: #6A0DAD;             
+}
+
+body.light-mode .dropdown-btn:hover {
+    background-color: #6A0DAD;  
+    color: #FAFAFA;            
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 110%;
+    width: 100%;
+    background: #2b2830;
+    border-radius:8px;
+    border:1px solid #6c63ff;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+body.light-mode .dropdown-menu {
+    color: black;
+    background-color: #F5F5F5;
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu.open {
+    max-height: 500px;
+    opacity: 1;
+}
+
+body.light-mode .option:hover {
+    background-color: #D9D9D9; 
+    color: black;               
+}
+
+
+body.light-mode .active {
+    background-color: #C0C0C0;
+}
+
+.option {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background: #3b3742;
+}
+
+.active {
+    background: #3b3742;
+}
+
+.hidden {
+    display: none;
+}
+
+.arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.arrow.rotate {
+    transform: rotate(180deg);
+}
+
+.box {
+    border: solid;
+    width: 100px;
+    height: 140px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    background: rgb(70, 0, 105);
+    cursor: pointer;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.box-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.description {
+    color: #F5F5F5;
+}
+
+.title {
+    color: #F5F5F5;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.box-link {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.box {
+    color: rgb(110, 0, 110);
+}
+
+body.light-mode .box {
+    color: rgb(46, 46, 46);
+    background-color: rgb(58, 58, 58);
+}
+
+#proj {
+    text-align: center;
+}
+
+.projectText {
+    text-align: center;
+}
+

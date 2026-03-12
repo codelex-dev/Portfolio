@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="about">About me</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+            <div class="header-row">
+            <div class="lHeader">
+                <a href="index.html" id="home">
+                    <i class="fa-solid fa-house"></i>
+                </a>    
+            </div>
+        
+            <div class="rHeader">
+            <a href="projects.html" id="projects" data-translate="projects">projects</a>
+            <a href="aboutme.html" id="aboutMe" data-translate="about">About me</a>
+            <button id="theme-toggle">🌙</button>
+            <button id="flag" data-translate="flag">🇬🇧</button>
+            </div>
+        </div>    
+    </header>
+
+    <main>
+       <div class="container"> 
+        <h1 data-translate="about">About Me</h1>
+        
+        <h2 data-translate="beschreibung">When I'm not building projects, I like spending my time working out, playing games and exploring new media.</h2>
+        
+        <div class="dropdown">
+            <button class="dropdown-btn" id="dropdownBtn">
+                Games <span class="arrow">v</span>
+            </button>
+
+            <div class="dropdown-menu" id="dropdownMenu">
+                <div class="option active" data-topic="games" data-translate="games">Games</div>
+                <div class="option" data-topic="movies" data-translate="movies">Movies</div>
+                <div class="option" data-topic="shows" data-translate="shows">Shows</div>
+                <div class="option" data-topic="books" data-translate="books">Books</div>
+                <div class="option" data-topic="music" data-translate="music">Music</div>
+                
+            </div>
+        </div>
+
+        <div class="content">
+            <ul id="games" class="topic">
+                <li>Resident Evil Franchise</li>
+                <li>Cyberpunk 2077</li>
+                <li>Asura's Wrath</li>
+                <li>Elden Ring</li>
+                <li>Dark Souls 2</li>
+                <li>Dark Souls 3</li>
+                <li>Skyrim</li>
+                <li>Devil May Cry Franchise</li>
+                <li>Zelda Franchise</li>
+                <li>Metal Gear Solid Franchise</li>
+                <li>Chess</li>
+                <li>Batman Arkham Franchise</li>
+                <li>Oblivion</li>
+            </ul>
+
+            <ul id="movies" class="topic hidden">
+                <li>John Wick</li>
+                <li>Batman Dark Knight Trilogy</li>
+                <li>Matrix</li>
+                <li>Scary Movie</li>
+                <li>Pirates of the Caribbean</li>
+                <li>American Psycho</li>
+                <li>Spider-Man (Sam Raimi Trilogy)</li>
+                <li>Bullet Train</li>
+                <li>Star Wars</li>
+            </ul>
+
+            <ul id="shows" class="topic hidden">
+                <li>Daredevil</li>
+                <li>Dexter</li>
+                <li>Breaking Bad</li>
+                <li>Parasyte - The Maxim</li>
+                <li>Peacemaker</li>
+                <li>Code Geass</li>
+                <li>Death Note</li>
+            </ul>
+
+            <ul id="books" class="topic hidden">
+                <li>Berserk</li>
+                <li>One Punch Man</li>
+                <li>Black Clover</li>
+                <li>Tokyo Ghoul</li>
+            </ul>
+
+            <ul id="music" class="topic hidden">
+                <li>Someday - Two Door Cinema Club</li>
+                <li>It Has To Be This Way - Jimmy Gnecco</li>
+                <li>Greek Tragedy - The Wombats</li>
+                <li>Bury The Light - Casey Edwards</li>
+                <li>Guerilla Radio - Rage Against The Machine</li>
+                <li>eScape - Masayoshi Soken</li>
+                <li>Invisible - Duran Duran</li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
